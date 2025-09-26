@@ -1,7 +1,7 @@
 module.exports =
   pkg:
     name: 'bar', version: '0.0.1'
-    extend: {name: "base", version: "0.0.1"}
+    extend: {name: "@makechart/base"}
     dependencies: [
       {url: "/assets/lib/@plotdb/sheet/main/index.min.js"}
       {url: "/assets/lib/@plotdb/sheet/main/index.min.css"}
