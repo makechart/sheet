@@ -1,7 +1,8 @@
 module.exports =
   pkg:
-    name: 'bar', version: '0.0.1'
-    extend: {name: "@makechart/base"}
+    name: 'sheet', version: '0.0.1'
+    # lite: 不帶 d3 的 base. 這張圖本身不用 d3; @plotdb/sheet 只有設了儲存格格式才會找 d3.format
+    extend: {name: "@makechart/base", path: "lite/index.html"}
     dependencies: [
       {url: "/assets/lib/@plotdb/sheet/main/index.min.js"}
       {url: "/assets/lib/@plotdb/sheet/main/index.min.css"}
